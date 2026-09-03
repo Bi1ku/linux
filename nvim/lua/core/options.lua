@@ -1,0 +1,37 @@
+vim.opt.relativenumber = true
+vim.opt.number = true
+
+-- tabs & indentation
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+
+-- line wrapping
+vim.opt.wrap = true
+
+-- search settings
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- cursor line
+vim.opt.scrolloff = 8
+vim.opt.cursorline = true
+vim.opt.backspace = "indent,eol,start"
+
+-- clipboard
+vim.opt.clipboard = "unnamedplus"
+
+-- split windows
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+vim.opt.iskeyword:append("-")
+
+-- theme
+vim.opt.termguicolors = true
+vim.opt.signcolumn = "yes"
+vim.opt.background = "dark"
+
+-- no auto commenting new lines
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
